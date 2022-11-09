@@ -17,13 +17,9 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 export default function SimpleMap(props) {
 
 
-  const defaultProps = {
-    center: {
-      lat: 49.2712,
-      lng: -123.1340
-    },
-    zoom: 11
-  };
+
+    const zoom = 16
+
 
   const nearbyStations = props.nearbyStations.map((station) => {
     
@@ -69,10 +65,10 @@ export default function SimpleMap(props) {
       <GoogleMapReact
         id="google-map"
         style={{ height: '100vh', width: 'this.state.progress', position: 'relative' }}
-        bootstrapURLKeys={{ key: "AIzaSyBJcuaSVdI86sL8eyTV1ZyIMHD10zG8nGo" }}
+        bootstrapURLKeys={{ key: "" }}
         ref={inputEl}
-        defaultCenter={defaultProps.center}
-        defaultZoom={defaultProps.zoom}
+        center={{ lat: props.userLat, lng: props.userLong } || {lat: 49.2712, lng: -123.1340} }
+        zoom={zoom}
       >
         {userLocation}
         {nearbyStations}
