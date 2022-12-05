@@ -44,16 +44,16 @@ A public transport and global navigation app, designed for users both at home an
 
 ## Dependencies
 
-chakra-ui
-material-ui
-google-map-react
-sass
-styled-components
-react-router
-axios
-framer-motion
-express
-react
+* chakra-ui
+* material-ui
+* google-map-react
+* sass
+* styled-components
+* react-router
+* axios
+* framer-motion
+* express
+* react
 
 
 
