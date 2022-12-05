@@ -36,10 +36,25 @@ A public transport and global navigation app, designed for users both at home an
 
 ## Screenshots
 
-![""]()
-![""]()
-![""]()
-![""]()
-![""]()
+!["LoadingScreen"](https://github.com/MiersX/Transit-Better/blob/main/docs/LoadingScreen.png?raw=true)
+!["LocalizedMap"](https://github.com/MiersX/Transit-Better/blob/main/docs/LocalizedMap.png?raw=true)
+!["SavingAddresses"](https://github.com/MiersX/Transit-Better/blob/main/docs/SavingAddresses.png?raw=true)
+!["UserStatAggregates"](https://github.com/MiersX/Transit-Better/blob/main/docs/UserStats.png?raw=true)
+!["PlanningRoutes"](https://github.com/MiersX/Transit-Better/blob/main/docs/PlanningARoute.png?raw=true)
 
 ## Dependencies
+
+chakra-ui
+material-ui
+google-map-react
+sass
+styled-components
+react-router
+axios
+framer-motion
+express
+react
+
+
+
+
