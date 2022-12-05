@@ -5,6 +5,9 @@ import SimpleMap from './SimpleMap';
 import ButtonContainer from "./ButtonContainer";
 import StopSchedule from "./StopSchedule"; 
 import BasicModal from "../components/Modal";
+import BasicPopover from "./UserStats";
+import TemporaryDrawer from "./UserDrawer";
+import LoggedButtonContainer from "./LoggedButtonContainer";
 
 import './main-container.css'
 
@@ -21,11 +24,12 @@ const Home =() => {
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  
 
 
 
-  const apiKey = ""; // INSERT API KEY HERE OR SET UP .ENV DO NOT PUSH APIKEY TO GITHUB
+
+
+  const apiKey = "39gelvG0Ia_t8x2pYhzn0wwisBZdWBMGaj1kEGC4VFA"; // INSERT API KEY HERE OR SET UP .ENV DO NOT PUSH APIKEY TO GITHUB
 
   const getNearbyStations = () => {
     const userCoords = `${userLat},${userLong}`
@@ -94,7 +98,7 @@ const Home =() => {
           />
           <ButtonContainer
             getNearbyStations={getNearbyStations}
-            CurrentLocation={CurrentLocation}
+            CurrentLocation={CurrentLocation} 
           />
           <BasicModal 
             stopSchedule={stopSchedule} 
@@ -103,6 +107,7 @@ const Home =() => {
             handleClose={handleClose} 
           />
           <LoginButton/>
+          <LoggedButtonContainer/>
     </div>
   )
 }

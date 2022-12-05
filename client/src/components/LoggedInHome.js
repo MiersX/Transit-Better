@@ -7,6 +7,7 @@ import StopSchedule from "./StopSchedule";
 import './main-container.css'
 import AddressButton from "./AddressButton";
 import BasicModal from "./Modal";
+import LoggedButtonContainer from "./LoggedButtonContainer";
 
 
 
@@ -93,6 +94,7 @@ const LoggedInHome =() => {
           <ButtonContainer
             getNearbyStations={getNearbyStations}
             CurrentLocation={CurrentLocation}
+            loggedIn={1}
           />
           <BasicModal 
             stopSchedule={stopSchedule} 
@@ -101,6 +103,7 @@ const LoggedInHome =() => {
             handleClose={handleClose} 
           />
           <AddressButton/>
+          <LoggedButtonContainer/>
     </div>
   )
 }

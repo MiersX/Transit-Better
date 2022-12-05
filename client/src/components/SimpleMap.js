@@ -5,6 +5,7 @@ import DirectionForm from "./DirectionForm";
 import { useRef } from "react";
 import LocationPin from "./LocationPin";
 import CurrentLocation from "./CurrentLocation";
+import BasicPopover from "./UserStats";
 import './DirectionForm.css'
 // import dotenv from "dotenv"
 // dotenv.config()
@@ -65,7 +66,7 @@ export default function SimpleMap(props) {
       <GoogleMapReact
         id="google-map"
         style={{ height: '100vh', width: 'this.state.progress', position: 'relative' }}
-        bootstrapURLKeys={{ key: "" }}
+        bootstrapURLKeys={{ key: "AIzaSyCrJLXM49VpRHBxrr-gETmxdMUW7jK72pY" }}
         ref={inputEl}
         center={{ lat: props.userLat, lng: props.userLong } || {lat: 49.2712, lng: -123.1340} }
         zoom={zoom}
